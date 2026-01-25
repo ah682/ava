@@ -33,5 +33,5 @@ help = [
    <span class="command">↳</span>&nbsp;Clear terminal.</pre><br>`,
 ];
 banner = [
-  `<div class="pt-2"><span class="text-[#7d82d7db] ">Welcome To My Portfolio — Type <span class="command text-[#75e1e7]">help</span> For A List Of Supported Commands.</span></div>`,
+  `<div class="pt-2"><span class="text-[#7d82d7db] ">Type <span class="command text-[#75e1e7]">help</span> For A List Of Supported Commands.</span></div>`,
 ];

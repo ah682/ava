@@ -1403,7 +1403,7 @@ body {
 #liner {
   line-height: 1.3em;
   margin-top: -2px;
-  padding-left: 11px;
+  padding-left: 15px;
   -webkit-animation: show 0.5s ease forwards;
           animation: show 0.5s ease forwards;
   -webkit-animation-delay: 1.2s;
@@ -1415,7 +1415,7 @@ body {
   content: "ava@ah682:~/Desktop/portfolio (main) $";
 }
 #terminal {
-  padding-left: 11px;
+  padding-left: 15px;
 }
 
 @-webkit-keyframes show {

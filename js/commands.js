@@ -14,8 +14,8 @@ projects = [
   '<a href="https://github.com/ah682/cute-calculator target="blank">github.com/ah682/cute-calculator  - </a> React calculator with fluid UI animations. Built with TypeScript, Vite, and TailwindCSS, handles standard arithmetic operations with error handling.',
   "<br>",
   '<b>Projects in progress</b>',
-  '<a href=https://community.torproject.org/relay/types-of-relays/" target="blank"> Tor Relay Node </a> - an operated server that assists in routing encrypted traffic through the Tor network',
-  '<a href="https://docs.joinmastodon.org/user/run-your-own/" target="blank"> Mastodon Server </a> - A self hosted node in the Mastodon federated social network.',
+  '<a href=https://community.torproject.org/relay/types-of-relays/" target="blank"> Tor Relay Node </a> - An operated server that assists in routing encrypted traffic through the Tor network',
+  '<a href="https://en.wikipedia.org/wiki/Fediverse" target="blank"> Fediverse Node </a> - An independent server in a decentralized network that hosts user accounts and content which allows interaction with users on other nodes.',
   "<br>"
 ];
 

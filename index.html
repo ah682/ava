@@ -1,85 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="ava">
-  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
-  <link href="main.css" rel="stylesheet" />
+  <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+  <link href="main.css" rel="stylesheet">
+  <link href="portfolio.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-  <link rel="preconnect" hrefsocial="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/39565093f3.js"></script>
-    <script>function close_window() {
-        if (confirm(" Close Window?")) { close(); }
-      } </script>
-       <script 
-  src="https://code.jquery.com/jquery-3.6.1.js"
-  integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
-  crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/39565093f3.js" crossorigin="anonymous"></script>
+  <script>
+    function close_window() { if (confirm(" Close Window?")) close(); }
   </script>
   <title>Ava</title>
 </head>
-
 <body style="font-family: 'Ubuntu', sans-serif;" class="overflow-y-scroll bg-cover lazy">
-  <div class="m-2 relative" onclick="document.getElementById('texter').focus();">
-    <div
-      class="ring-1 ring-purple-500 bg-[#081d2dd8] border-[#7AE0CA] border backdrop-blur-sm rounded-[4px] shadow-xl shadow-[#1d1e1fb4] min-h-[98vh] resize overflow-hidden ">
-
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="m-2 relative">
+    <div class="ring-1 ring-purple-500 bg-[#081d2dd8] border-[#7AE0CA] border backdrop-blur-sm rounded-[4px] shadow-xl shadow-[#1d1e1fb4] min-h-[98vh] resize overflow-hidden">
       <header>
         <p class="p-2 text-center text-slate-400">
-          <a href="https://github.com/ah682/" target="blank"><i
-              class="gitResponsive fa-brands fa-github pb-1 text-xl float-left text-slate-500 hover:text-pink-800"></i>ava@ah682:
-            ~/avaonline</a>
-          <a href="javascript:close_window();"><i
-              class="fa-solid fa-circle-xmark text-xl  justify-end text-slate-500 hover:text-red-500 items-end  float-right "></i></a>
+          <a href="https://github.com/ah682/" target="_blank" rel="noopener noreferrer">
+            <i class="gitResponsive fa-brands fa-github pb-1 text-xl float-left text-slate-500 hover:text-pink-800" aria-hidden="true"></i>
+            ava@ah682: ~/avaonline
+          </a>
+          <button type="button" class="window-close" onclick="close_window()" aria-label="Close window">
+            <i class="fa-solid fa-circle-xmark text-xl text-slate-500 hover:text-red-500" aria-hidden="true"></i>
+          </button>
         </p>
+        <nav class="portfolio-nav" aria-label="Portfolio">
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a href="#command">Terminal</a>
+        </nav>
         <hr class="border-[#7AE0CA]">
       </header>
-      <div class="p-4">
-        <div class="flex flex-col md:flex-row">
-          <pre
-            class="ascii anciiGreen hover:bg-[#55FF55] pt-1 pb-9 prose lg:prose-xl sm:font-medium whitespace-pre-wrap inline-block break-words leading-none"
-            id="ava">
-
-██       ▄   ██   
-█ █       █  █ █  
-█▄▄█ █     █ █▄▄█ 
-█  █  █    █ █  █ 
-   █   █  █     █ 
-  █     █▐     █  
- ▀      ▐     ▀   
-
-                                                 
-                                                                                                  
-            </pre>
-          
-            </a>
+      <main id="main-content" class="p-4">
+        <pre class="ascii anciiGreen hover:bg-[#55FF55] pt-1 pb-9 prose lg:prose-xl sm:font-medium whitespace-pre-wrap inline-block break-words leading-none" id="ava" aria-label="Ava">
+██       ▄   ██
+█ █       █  █ █
+█▄▄█ █     █ █▄▄█
+█  █  █    █ █  █
+   █   █  █     █
+  █     █▐     █
+ ▀      ▐     ▀
+        </pre>
+        <div class="portfolio-overview">
+          <section id="projects" aria-labelledby="projects-heading">
+            <h1 id="projects-heading">Selected projects</h1>
+            <ul>
+              <li><a href="https://github.com/ah682/riskreplay" target="_blank" rel="noopener noreferrer">RiskReplay</a> — point-in-time risk replay research toolkit.</li>
+              <li><a href="https://github.com/ah682/noticeforge" target="_blank" rel="noopener noreferrer">NoticeForge</a> — structured notice extraction and review workflow.</li>
+              <li><a href="https://github.com/ah682/complexity-profiler" target="_blank" rel="noopener noreferrer">Complexity Profiler</a> — Python algorithm measurements and empirical growth fits.</li>
+              <li><a href="https://github.com/ah682/commission-dashboard" target="_blank" rel="noopener noreferrer">Commission Dashboard</a> — React dashboard with a progressive commission model and demo data.</li>
+              <li><a href="https://github.com/ah682/cute-calculator" target="_blank" rel="noopener noreferrer">Cute Calculator</a> — animated React and TypeScript calculator demo.</li>
+            </ul>
+          </section>
+          <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About</h2>
+            <p>Software dev specialising in fullstack web development, primarily with React, TypeScript, JavaScript, SQL and relevant cloud and on premise servers.</p>
+          </section>
+          <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact</h2>
+            <p><a href="https://github.com/ah682" target="_blank" rel="noopener noreferrer">Find me on GitHub</a> for my public profile and contact information.</p>
+          </section>
+        </div>
+        <section aria-label="Interactive terminal" class="terminal-section">
+          <div id="terminal" role="log" aria-live="polite" aria-relevant="additions text"><span id="before"></span></div>
+          <div id="command" tabindex="-1">
+            <label class="terminal-label" for="texter">Terminal command — try <code>help</code></label>
+            <input type="text" id="texter" class="texter" autocomplete="off" autocapitalize="off" spellcheck="false" aria-describedby="command-help">
+            <div id="liner" aria-hidden="true"><span id="typer"></span><b class="cursor" id="cursor">█</b></div>
           </div>
-        </div>
-        <div id="terminal">
-          <a id="before"></a>
-        </div>
-        <div id="command" onclick="$('texter').focus();">
-          <input type="text" id="texter" class="texter" onkeyup="typeIt(this, event)" onkeydown="typeIt(this, event); 
-                   moveIt(this.value.length, event)" onkeypress="typeIt(this, event);"></input>
-          <div id="liner">
-            <span id="typer"></span><b class="cursor" id="cursor">█</b>
-            <div class="list"></div>
-
-          </div>
-        </div>
-        <div>
-
-
-          <script src="./js/caret.js"></script>
-          <script src="./js/commands.js"></script>
-          <script src="./js/main.js"></script>
-
+          <p id="command-help" class="terminal-help">Press Enter to run a command. Use Up and Down to browse command history.</p>
+          <noscript><p>The project links and profile above work without JavaScript. Enable it to use the terminal.</p></noscript>
+        </section>
+      </main>
+    </div>
+  </div>
+  <script src="./js/caret.js"></script>
+  <script src="./js/commands.js"></script>
+  <script src="./js/main.js"></script>
 </body>
-
 </html>

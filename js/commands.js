@@ -9,8 +9,8 @@ var aboutme = [
 var projects = [
   "<br>",
   '<a href="https://github.com/ah682" target="_blank" rel="noopener noreferrer">github.com/ah682</a> - My GitHub',
-  '<a href="https://github.com/ah682/complexity-profiler" target="_blank" rel="noopener noreferrer">github.com/ah682/complexity-profiler - </a> Python algorithm measurements and candidate empirical growth fits; finite samples do not prove Big-O.',
-  '<a href="https://github.com/ah682/cute-calculator" target="_blank" rel="noopener noreferrer">github.com/ah682/cute-calculator  - </a> React calculator with fluid UI animations. Built with TypeScript, Vite, and TailwindCSS, handles standard arithmetic operations with error handling.',
+  '<a href="https://github.com/ah682/complexity-profiler" target="_blank" rel="noopener noreferrer">github.com/ah682/complexity-profiler - </a> Measure Python algorithms and compare how their runtime grows.',
+  '<a href="https://github.com/ah682/cute-calculator" target="_blank" rel="noopener noreferrer">github.com/ah682/cute-calculator - </a> A React and TypeScript calculator with an animated display and background.',
   "<br>",
   '<a href="https://github.com/ah682/riskreplay" target="_blank" rel="noopener noreferrer">RiskReplay</a> - Point-in-time risk replay research toolkit.',
   '<a href="https://github.com/ah682/noticeforge" target="_blank" rel="noopener noreferrer">NoticeForge</a> - Structured notice extraction and review workflow.',

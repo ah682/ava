@@ -1,59 +1,41 @@
 # Ava's terminal portfolio
 
-A personal, terminal-style portfolio for Ava (`ah682`), built with HTML, CSS and
-vanilla JavaScript. The existing ASCII name, translucent terminal chrome, backdrop
-and command history remain. Ordinary Projects, About and Contact links provide a
-readable route to the same profile without needing to discover a terminal command.
-
-Selected project links point to RiskReplay, NoticeForge, Complexity Profiler,
-Commission Dashboard and Cute Calculator repositories. Contact links to the existing
-GitHub profile; the page has no message-submission service.
+My portfolio, built with HTML, CSS and vanilla JavaScript. Browse the project,
+about and contact links, or explore through the terminal with commands like
+`help`, `aboutme` and `projects`.
 
 ## Run locally
-
-The checked-in CSS and scripts can be served directly; no npm build is required:
 
 ```bash
 python3 -m http.server 8000 --bind 127.0.0.1
 ```
 
-Open `http://localhost:8000`. `CNAME` names `avaonline.me`, but a CNAME file alone
-does not verify current DNS or live hosting.
+Open `http://localhost:8000`. The page uses the checked-in CSS and JavaScript, so
+there is no build step.
 
-Click the labelled terminal area, or tab to its input, and type `help`, `aboutme`,
-`projects`, `contact`, `history`, `clear` or `banner`. Enter runs a command; Up/Down
-recall earlier commands. These handlers belong to the input, so ordinary links keep
-their browser keyboard behavior. Typed commands and history are rendered as text;
-HTML markup is reserved for the repository's own help/project descriptions.
+Click the terminal or tab to its input, then press Enter to run a command. Up and
+Down recall previous commands. Use `help` for the command list, `history` to see
+what you've entered, and `clear` to start with an empty terminal.
 
-## Development and verification
+## Development
 
 ```bash
 npm ci
 npm test
-node --check js/main.js
-node --check js/caret.js
-node --check js/commands.js
 ```
 
-The Node test runner and LinkeDOM exercise literal command rendering, history,
-input-only keyboard handling, composition input and valid project destinations.
-This checks DOM behavior, not real-browser layout or assistive-technology support;
-check visible keyboard focus, link activation and narrow-screen layout in a browser
-after UI changes. Tests were developed with Node.js 24; serving the page needs no Node.
+The tests use Node.js and LinkeDOM to check command output, history, keyboard
+handling and project links. They were developed with Node.js 24. After changing
+the interface, check keyboard focus and the mobile layout in a browser too.
 
-`main.css` is the existing generated Tailwind stylesheet. New navigation styles live
-in `portfolio.css`. The legacy `npm run dev` references a missing `tailwind.css`
-input, so it is not the local serving command; restoring the CSS generation pipeline
-is separate maintenance work.
+- `index.html` contains the page sections.
+- `js/commands.js` contains the terminal's profile, project and help text.
+- `js/main.js` and `js/caret.js` handle terminal input and output. Commands run
+  locally in the page.
+- `portfolio.css` styles the navigation and profile sections.
+- `main.css` is the generated Tailwind stylesheet. The old `npm run dev` script
+  refers to a missing `tailwind.css`; serve the existing CSS using the command
+  above.
 
-## Provenance and limits
-
-This is a personal frontend project, not a shell or server administration console.
-Terminal commands do not execute system commands. Project descriptions link to their
-repositories and should be reviewed there for current evidence and limitations.
-
-The page loads Google Fonts and a Font Awesome kit; those requests and their terms
-are external to this repository. Preserve Tailwind's existing licence notice in the
-stylesheet and review backdrop/font/icon provenance before reuse. Existing package
-licence metadata is unchanged; this README grants no new rights to third-party assets.
+The page uses Google Fonts and Font Awesome. Tailwind's licence notice is included
+in `main.css`.

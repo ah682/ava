@@ -1,0 +1,33 @@
+/* Ordinary links complement the terminal; keyboard focus stays visible. */
+.portfolio-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: .6rem 1.5rem;
+  padding: .6rem 1rem 1rem;
+}
+.portfolio-nav a, .portfolio-overview a { text-decoration: underline; text-underline-offset: .2em; }
+a:focus-visible, #command:focus-within {
+  outline: 2px solid #7ae0ca;
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+.portfolio-overview { max-width: 64rem; padding: 0 15px 1rem; color: #b9cbd2; }
+.portfolio-overview section { margin-bottom: 1.5rem; scroll-margin-top: 1rem; }
+.portfolio-overview h1, .portfolio-overview h2 { color: #7ae0ca; font-size: 1.1rem; margin-bottom: .5rem; }
+.portfolio-overview li { margin: .45rem 0; }
+.terminal-section { padding-bottom: 1rem; }
+.terminal-label, .terminal-help { font-size: .85rem; color: #b9cbd2; }
+.terminal-label { display: block; padding-bottom: .4rem; }
+.terminal-help { margin: .75rem 0; padding-left: 15px; }
+#command { height: auto; min-height: 4.5rem; padding: .4rem 0; }
+#terminal p { white-space: pre-wrap; overflow-wrap: anywhere; }
+#liner { overflow-wrap: anywhere; }
+.skip-link { position: absolute; left: -10000px; top: .5rem; padding: .5rem; z-index: 10; background: #081d2d; }
+.skip-link:focus { left: .5rem; }
+@media (prefers-reduced-motion: reduce) {
+  .cursor, #liner { animation: none; opacity: 1; }
+}
+
+.window-close { float: right; }
+.window-close:focus-visible { outline: 2px solid #7ae0ca; outline-offset: 4px; }
